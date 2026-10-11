@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Sign Up Form UI |</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="prabhu.css">
+</head>
+<body>
+  <!-- Decorative background circles -->
+  <div class="bg-circle bg1"></div>
+  <div class="bg-circle bg2"></div>
+  <div class="bg-circle bg3"></div>
+
+  <div class="container" id="container">
+    <!-- Login Form Card -->
+    <div class="form-card sign-in-card">
+      <div class="icon-circle">
+        <i class="fa-solid fa-lock"></i>
+      </div>
+      <h2>Welcome</h2>
+      <p class="subtitle">Login to continue your journey</p>
+
+      <form action="#" id="loginForm">
+        <div class="input-box">
+          <input type="email" placeholder="Email Address" required>
+        </div>
+        <div class="input-box">
+          <input type="password" placeholder="Password" required>
+        </div>
+
+        <div class="options">
+          <label class="remember">
+            <input type="checkbox">
+            <span>Remember me</span>
+          </label>
+          <a href="#" class="forgot-link">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+
+        <p class="switch-text">
+          Don't have an account? <a href="#" id="toSignUp">Sign Up</a>
+        </p>
+      </form>
+    </div>
+
+    <!-- Sign Up Form Card -->
+    <div class="form-card sign-up-card hidden">
+      <div class="icon-circle">
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <h2>Create Account</h2>
+      <p class="subtitle">Start your journey with us</p>
+
+      <form action="#" id="signUpForm">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" required>
+        </div>
+        <div class="input-box">
+          <input type="email" placeholder="Email Address" required>
+        </div>
+        <div class="input-box">
+          <input type="password" placeholder="Password" required>
+        </div>
+        <div class="input-box">
+          <input type="password" placeholder="Confirm Password" required>
+        </div>
+
+        <button type="submit" class="btn">Create Account</button>
+
+        <p class="switch-text">
+          Already have an account? <a href="#" id="toSignIn">Login</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <script src="prabhu.js"></script>
+</body>
+</html>

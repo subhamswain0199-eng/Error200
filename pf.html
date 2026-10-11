@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profiles</title>
+  <style>
+    /* Container for the profiles */
+    .profile-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      padding: 40px;
+      font-family: system-ui, -apple-system, sans-serif;
+      background-color: #f8fafc;
+      min-height: 100vh;
+    }
+
+    /* Base Profile Card */
+    .profile-card {
+      background: #ffffff;
+      border: 2px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* 1. Hover effect (Scale up + shadow) */
+    .profile-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    /* 2. Special Admin Badge */
+    .admin-badge {
+      position: absolute;
+      top: -12px;
+      right: -12px;
+      background-color: #ef4444; 
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 6px 12px;
+      border-radius: 20px;
+      box-shadow: 0 4px 6px rgba(239, 68, 68, 0.3);
+    }
+
+    /* 3. Last user different border color */
+    .profile-card:last-child {
+      border-color: #6366f1; 
+      background-color: #fefeff; 
+    }
+
+    /* Inner card styling (avatars and text) */
+    .avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #f1f5f9;
+    }
+
+    .info h3 {
+      margin: 0 0 4px 0;
+      font-size: 1.1rem;
+      color: #1e293b;
+    }
+
+    .info p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-list">
+    <!-- Profile 1: Admin User -->
+    <div class="profile-card">
+      <span class="admin-badge">Admin</span>
+      <img class="avatar" src="https://i.pravatar.cc/150?img=32" alt="Sarah">
+      <div class="info">
+        <h3>Sarah Connor</h3>
+        <p>System Administrator</p>
+      </div>
+    </div>
+
+    <!-- Profile 2 -->
+    <div class="profile-card">
+      <img class="avatar" src="https://i.pravatar.cc/150?img=11" alt="Marcus">
+      <div class="info">
+        <h3>Marcus Johnson</h3>
+        <p>Product Designer</p>
+      </div>
+    </div>
+
+    <!-- Profile 3 -->
+    <div class="profile-card">
+      <img class="avatar" src="https://i.pravatar.cc/150?img=5" alt="Elena">
+      <div class="info">
+        <h3>Elena Rodriguez</h3>
+        <p>Software Engineer</p>
+      </div>
+    </div>
+
+    <!-- Profile 4 -->
+    <div class="profile-card">
+      <img class="avatar" src="https://i.pravatar.cc/150?img=12" alt="David">
+      <div class="info">
+        <h3>David Chen</h3>
+        <p>Data Analyst</p>
+      </div>
+    </div>
+
+    <!-- Profile 5 -->
+    <div class="profile-card">
+      <img class="avatar" src="https://i.pravatar.cc/150?img=9" alt="Aisha">
+      <div class="info">
+        <h3>Aisha Patel</h3>
+        <p>Marketing Lead</p>
+      </div>
+    </div>
+
+    <!-- Profile 6: Last User -->
+    <div class="profile-card">
+      <img class="avatar" src="https://i.pravatar.cc/150?img=15" alt="Tom">
+      <div class="info">
+        <h3>Tom Baker</h3>
+        <p>Customer Support</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
